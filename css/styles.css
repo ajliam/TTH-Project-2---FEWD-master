@@ -1,164 +1,301 @@
-/*Universal style*/
-  * {
-          box-sizing: border-box;
-          }
+* {
+  box-sizing: border-box;
+}
 
-        
 body {
-  font-family: 'Open Sans', serif;
-  font-weight: 600;
-  letter-spacing: .05em;
-  background:#c6c7d3;
-  height: 100%;
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 1024px;
-  text-align: center;
-}
-/* -------------------------------- --------Navigation ------------------------------ */
-header {
-  margin-top: 1em;
-  padding-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAFAFA;
 }
 
-h1 {
-  color: #000;
-  font-size: 1.7em;
-  margin:20px 0;
-  display: inline-block;
-  }
-
-.top-nav a {
-    background: #c6c7d3;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-.top-nav li {
-    list-style: none;
-    margin: 10px 15px;
-  }
-
-.top-nav {
-  float: right;
+:target {
   display: block;
-  }
-
-.intro {
-    clear: both;
-}
-
-.profile-img {
-  float:right;
-  max-width: 100%;
-  padding: 3%;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.top a {
-  text-align: right;
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(0, 0, 0);
-}
-
-a:hover {
-  color: #46f7f7;
-}
-
-p {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-footer p{
-  clear: both;
-  text-align: center;
-  font-size: .5em;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
 }
 
 /* ------------------------------Portfolio section----------------------------------------- */
-#portfolio {
-  padding-top: 30px;
+
+a {
+  text-decoration: none;
+  color: #7F7F7F;
 }
 
 .container {
-  margin:0 auto;
-  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #FAFAFA;
+  padding-bottom: 40px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.main-nav {
+  padding-bottom: 35px;
+}
+
+h1, .main-nav li {
+  text-align: center;
+  padding: 10px 15px;
+  margin: 10px 0px;
+}
+
+.main-nav li {
+  background-color: #EDEDED;
+  font-size: 1.12rem;
+  font-weight: bold;
+  display: block;
+}
+
+.main-nav a:hover, .footer-nav a:hover, .email a:hover {
+  color: #46f7f7;
+}
+
+.ban-text {
+  color: #7F7F7F;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.pf-pic {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;  
+}
+
+.card {
+  background-color: #e7e5e5;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.pf-heading {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.pf-div {
   text-align: center;
 }
 
-.background {
-  background: #fff;
+.pf-div h2 {
+  margin-top: 40px;
+  margin-bottom: 25px;
 }
 
-.project-pic {
-  width: 100%;
-  max-width: 80%;
-  box-shadow: 10px 10px 8px #888888;
+.pf-div p {
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
-.clearfix::after {
-  content:"";
-  display: table;
-  clear: both;
+.pf-imgs {
+  max-width: 100%;
 }
 
-.col {
-  width: 50%;
-  padding: 1em;
-  float: left;
+/*============================== Footer Styles========================================= */
+
+.contact, footer {
+  background-color: #FAFAFA;
+  color: #7F7F7F;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
-  /* ------------------------------------- contact & footer--------------------------------- */
 
 .contact {
-    padding: 2em 10em;
-}
-  
-.footer-nav li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-}
-  
-footer {
-    border-top: dashed grey 1px;
-}
-  
-footer h3 {
-    float:left;
-    width: 49% 25%;
-}
-  
-  footer ul {
-    float:right;
-    width: 49%;
+  text-align: center;
+  padding: 60px;
+  border-top: 1px solid #E7E7E7;
 }
 
+.name,
+.main-nav li a,
+.pf-div h2,
+.pf-div p,
+.contact-head, 
+.sd-name, 
+.btt-link,
 .footer-nav a {
-  text-transform: uppercase;
-  margin-right: 5px;
+  color: #4A4A4A;
 }
 
-.top {
-  visibility: hidden;
+.contact-head {
+  margin: 0;
 }
-  
-/*----------------------------------------- Media Query --------------------------------- */
 
-@media (min-width: 768px) {
-    .top-nav li {
-    display: inline-block;
+.main-footer {
+  border-top: 1px solid #E7E7E7;
+  height: 60px;
+}
+
+.email {
+  margin-bottom: 0px;
+}
+
+.footer-nav li {
+  margin: 0px 10px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.sd-name {
+  float: left;
+}
+
+.btt-link {
+  float: right;
+  margin: 16px 0px;
+}
+
+.sd-name, 
+.btt-link,
+.footer-nav {
+  font-size: 1.12rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+  @media only screen and (min-width: 768px) {
+
+      .container {
+          width: 85%;
+          margin: 0 auto; 
+          padding-left: 0rem;
+          padding-right: 0rem;
+      }
+
+      .sd-container {
+          padding: 0 5px;
+      }
+
+      .name {
+          font-size: 2rem;
+          padding-left: 0px;
+      }
+
+      .main-nav {
+          text-align: center;
+          padding-right: 0px;
+      }
+
+      .main-nav li {
+          display: inline-block;
+          background-color: transparent;
+      }
+
+      li.contact-li {
+          padding-right: 0px;
+      }
+
+      ul.footer-nav {
+          display: block;
+          float: right;
+          margin: 16px 0px;
+      }
+
+      .banner {
+          float: right;
+      }
+
+      .ban-text {
+          text-align: left;
+      }
+
+      .pf-pic {
+          margin: 0;
+          padding-right: 0px;
+          float: right;
+          max-width: 320px;
+      }
+
+      .pf-div {
+          width: 50%;
+          padding: 0 5px;
+      }
+
+      .col-1, 
+      .col-2, 
+      .col-3, 
+      .col-4, 
+      .col-5, 
+      .col-6 {
+          float: left;
+          min-height: 400px;
+      }
+
+      .pf-div h2 {
+          margin-top: 42px;
+          margin-bottom: 25px;
+      }
+      
+      .pf-div p {
+          margin-top: 0px;
+          margin-bottom: 20px;
+      }
+
+      .ban-text {
+          overflow: hidden;
+      }
+
+      .clearfix::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+      .btt-link {
+          display: none;
+      }
+
+      .footer-nav {
+          display: block;
+          float: right;
+          margin: 16px;
+      }
+
+      .footer-nav li {
+          display: inline-block;
+      } 
+
   }
+     
+  @media only screen and (min-width: 1024px) {
 
-@media (min-width: 1024px) {
-    h1 {
-  float:left;
-  font-size: 1.75em;
-}
+      .container {
+          width: 90%;
+          margin: 0 auto;
+          padding-left: 0rem;
+          padding-right: 0rem;
+      }
+
+      .sd-container {
+          padding: 0 10px;
+      }
+
+      .name {
+          float: left;
+          font-size: 1.5rem;
+      }
+
+      .main-nav {
+          float: right;
+      }
+
+      .pf-div {
+          width: 33.33333333333%;
+          padding: 0 10px;
+      }
+
+  }
